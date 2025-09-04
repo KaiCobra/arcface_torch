@@ -50,15 +50,22 @@ Validation while training also shows the validation accuracy; focus on 'Accuracy
 python train_v2.py configs/dcface.py
 ```
 
+### 4. Comparison of different datasets:
+| Datasets | Subjects/Images | Method/Arch | LFW | CFP-FP | AgeDB | CPLFW | CALFW | Avg. |
+|----------|-----------------|-------------|-----|--------|-------|-------|-------|------|
+| **Baseline Datasets** |  |  |  |  |  |  |  |  |
+| MS1MV2 | 85K / 5.8M |  | 99.80 | 98.40 | 98.20 | 92.90 | 96.03 | 97.07 | 
+| DCFace | 10K / 0.55M | ArcFace/IR50 | 98.22 | 85.86 | 88.82 | 81.32 | 91.10 | 89.06 | 
+| CemiFace | 10K / 0.55M | ArcFace/IR50 | 98.67 | 87.44 | 89.57 | 84.25 | 92.13 | 90.41 |
+| Vec2Face | 10K / 0.50M | ArcFace/IR50 | 97.93 | 84.29 | 89.90 | 81.00 | 91.95 | 89.01 |
+| UIFace | 10K / 0.50M | ArcFace/IR50 | 99.10 | 91.54 | 91.03 | 87.73 | 92.08 | 93.00 |
 ## Download Datasets or Prepare Datasets  
 - [MS1MV2](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_#ms1m-arcface-85k-ids58m-images-57) (87k IDs, 5.8M images)
 - [MS1MV3](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_#ms1m-retinaface) (93k IDs, 5.2M images)
 - [Glint360K](https://github.com/deepinsight/insightface/tree/master/recognition/partial_fc#4-download) (360k IDs, 17.1M images)
 - [WebFace42M](docs/prepare_webface42m.md) (2M IDs, 42.5M images)
-- [Your Dataset, Click Here!](docs/prepare_custom_dataset.md)
 
 ## Model Zoo
-
 - The models are available for non-commercial research purposes only.  
 - All models can be found in here.  
 - [Baidu Yun Pan](https://pan.baidu.com/s/1CL-l4zWqsI1oDuEEYVhj-g): e8pw  
