@@ -28,7 +28,7 @@ configs/dcface.py
   config.network = "LResNet50E_IR" # IR50 model
   config.resume = False # Whether to resume from a checkpoint
 
-  config.rec = "path_to_rec_folder" # Path to the folder containing the .rec, .idx, .lst and .bin files 
+  config.rec = "./arcface_torch/rec/dcface" # Path to the folder containing the .rec, .idx, .lst and .bin files 
           # Training Data (MXNet RecordIO format):
               train.rec – binary file storing training images
               train.idx – index file for image positions
@@ -44,6 +44,8 @@ configs/dcface.py
   config.val_targets = ['lfw', 'cfp_fp', "agedb_30", 'cplfw', 'calfw'] # Evaluation datasets
 ```
 
+![rec_folder](rec.png)
+
 ### 3. To run on one GPU:
 Validation while training also shows the validation accuracy; focus on 'Accuracy-Highest' value.
 ```shell
@@ -58,7 +60,7 @@ python train_v2.py configs/dcface.py
 | DCFace | 10K / 0.55M | ArcFace/IR50 | 98.22 | 85.86 | 88.82 | 81.32 | 91.10 | 89.06 | 
 | CemiFace | 10K / 0.55M | ArcFace/IR50 | 98.67 | 87.44 | 89.57 | 84.25 | 92.13 | 90.41 |
 | Vec2Face | 10K / 0.50M | ArcFace/IR50 | 97.93 | 84.29 | 89.90 | 81.00 | 91.95 | 89.01 |
-| UIFace | 10K / 0.50M | ArcFace/IR50 | 99.10 | 91.54 | 91.03 | 87.73 | 92.08 | 93.00 |
+| UIFace | 10K / 0.50M | ArcFace/IR50 | 99.10 | 91.54 | 91.03 | 87.73 | 92.08 | 93.00 |![alt text](image.png)
 ## Download Datasets or Prepare Datasets  
 - [MS1MV2](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_#ms1m-arcface-85k-ids58m-images-57) (87k IDs, 5.8M images)
 - [MS1MV3](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_#ms1m-retinaface) (93k IDs, 5.2M images)
