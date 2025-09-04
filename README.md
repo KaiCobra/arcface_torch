@@ -62,3 +62,9 @@ python train_v2.py configs/dcface.py
 - All models can be found in here.  
 - [Baidu Yun Pan](https://pan.baidu.com/s/1CL-l4zWqsI1oDuEEYVhj-g): e8pw  
 - [OneDrive](https://1drv.ms/u/s!AswpsDO2toNKq0lWY69vN58GR6mw?e=p9Ov5d)
+
+## Dataset
+- DCFace: /media/ee303/disk1/dataset/dcface/dcface_images # 1098894876 (Dino)
+- CemiFace: /media/ee303/disk1/dataset/cemi/cemiface_fromada_500k/1shot_002_trainform_fu01to01_nonorm_50k # 1098894876 (Yu)
+- UIFace: /media/avlab/disco/Michael/TFace/generation/uiface/output # 1601191353 (David)
+- Vec2face: /media/avlab/disco/Michael/Vec2Face/dataset_images/hsface10k # 1601191353 (Danny)
