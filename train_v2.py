@@ -146,7 +146,7 @@ def main(args):
     global_step = 0
     if cfg.resume:
         #dict_checkpoint = torch.load(os.path.join(cfg.output, f"checkpoint_gpu_{rank}.pt"))
-        dict_checkpoint = torch.load(os.path.join(cfg.output, f"epoch_5_model.pt"))
+        dict_checkpoint = torch.load(os.path.join(cfg.output, f"epoch_3_model.pt"))
         start_epoch = dict_checkpoint["epoch"]
         global_step = dict_checkpoint["global_step"]
         backbone.module.load_state_dict(dict_checkpoint["state_dict_backbone"])
