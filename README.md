@@ -15,10 +15,12 @@ To avail the latest features of PyTorch, we have upgraded to version 1.12.0.
 To train a model, execute the `train_v2.py` script with the path to the configuration files. The sample commands provided below demonstrate the process of conducting distributed training.
 
 ### 1. Prepare dataset:
-- python -m im2rec --list --recursive train <path_to_your_dataset>
-- python -m im2rec train.lst <path_to_your_dataset>
+```python
+python -m im2rec --list --recursive train <path_to_your_dataset>
+python -m im2rec train.lst <path_to_your_dataset>
+```
 
-### 3. Modify the configuration file:
+### 2. Modify the configuration file:
 Modify the configuration file to set the path to your dataset and other hyperparameters as needed.
 
 ```text
@@ -41,20 +43,10 @@ configs/dcface.py
   config.num_image = 5000000 # Image number of your dataset
   config.val_targets = ['lfw', 'cfp_fp', "agedb_30", 'cplfw', 'calfw'] # Evaluation datasets
 ```
-### 2. To run on one GPU:
+### 3. To run on one GPU:
 
 ```shell
 python train_v2.py configs/dcface.py
-```
-
-Note:   
-It is not recommended to use a single GPU for training, as this may result in longer training times and suboptimal performance. For best results, we suggest using multiple GPUs or a GPU cluster.  
-
-
-### 2. To run on a machine with 8 GPUs:
-
-```shell
-torchrun --nproc_per_node=8 train_v2.py configs/dcface.py
 ```
 
 ## Download Datasets or Prepare Datasets  
