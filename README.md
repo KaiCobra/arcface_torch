@@ -1,4 +1,4 @@
-# Distributed Arcface Training in Pytorch
+# Arcface Training in Pytorch
 
 This repository is a simplified fork of the original [arcface_torch](https://github.com/coconutbee/arcface_torch) implementation. It currently includes only the ArcFace model and the `rec/casia` dataset for demonstration and training purposes.
 
