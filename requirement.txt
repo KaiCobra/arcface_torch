@@ -1,8 +1,11 @@
-tensorboard
-easydict
-mxnet
-onnx
+# Core numerical and visualization libraries
+numpy==1.26.4
+graphviz==0.8.4
+opencv-python==4.11.0.86
 scikit-learn
-opencv-python
+
+# Deep learning frameworks and utilities
 mxnet==1.5.0
-numpy==1.19.5
+onnx==1.19.0
+easydict
+tensorboard
