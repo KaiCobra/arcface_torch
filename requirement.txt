@@ -2,5 +2,5 @@ tensorboard
 easydict
 mxnet
 onnx
-sklearn-learn
+scikit-learn
 opencv-python
