@@ -58,5 +58,5 @@ rec/casia
 ### 4. To run on one GPU:
 Validation while training also shows the validation accuracy; focus on 'Accuracy-Highest' value.
 ```shell
-python train.py configs/arcface.py
+python train.py configs/casia.py
 ```
